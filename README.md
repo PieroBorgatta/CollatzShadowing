@@ -69,8 +69,10 @@ Lean.
 
 ## Citation
 
-Frozen, citable snapshots are on Zenodo (concept DOI, always latest):
-[10.5281/zenodo.20021537](https://doi.org/10.5281/zenodo.20021537).
+Frozen, citable snapshots are on Zenodo. The program's methodology
+retrospective is version 5:
+[10.5281/zenodo.20554750](https://doi.org/10.5281/zenodo.20554750); concept
+DOI (always latest): [10.5281/zenodo.20021537](https://doi.org/10.5281/zenodo.20021537).
 
 ## Methodology
 
