@@ -1,0 +1,21 @@
+name = "CollatzShadowing"
+version = "0.1.0"
+description = "Sorry-free Lean 4 + Mathlib formalization: exact congruential shadowing for the Syracuse/Collatz map, no-infinite-shadowing, an expanding-cycle exclusion, and finite Collatz-Wielandt spectral-radius certificates."
+keywords = ["collatz", "syracuse", "number-theory", "2-adic", "transfer-operator", "math"]
+homepage = "https://github.com/PieroBorgatta/CollatzShadowing"
+license = "CC-BY-4.0"
+defaultTargets = ["CollatzShadowing"]
+
+[leanOptions]
+pp.unicode.fun = true # pretty-prints `fun a ↦ b`
+relaxedAutoImplicit = false
+weak.linter.mathlibStandardSet = true
+maxSynthPendingDepth = 3
+
+[[require]]
+name = "mathlib"
+scope = "leanprover-community"
+rev = "v4.29.1"
+
+[[lean_lib]]
+name = "CollatzShadowing"
