@@ -83,4 +83,4 @@ succeeds with no `sorry`. See the
 
 ## License
 
-[CC BY 4.0](LICENSE).
+[MIT](LICENSE).
