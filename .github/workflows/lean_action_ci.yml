@@ -8,6 +8,12 @@ on:
       - '**'
   pull_request:
   workflow_dispatch:
+    inputs:
+      build_docs:
+        description: Build and deploy API documentation after formal checks
+        type: boolean
+        required: false
+        default: false
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
@@ -26,6 +32,28 @@ jobs:
 
     steps:
       - uses: actions/checkout@v5
+      - name: Verify synchronized source bytes
+        run: python3 tools/export_from_collatz.py --check
       - uses: leanprover/lean-action@v1
+        with:
+          build: 'true'
+          axiom-audit: 'true'
+          # Exact historical finite checks; no new native axiom is allowed.
+          axiom-audit-allow: >-
+            propext,Classical.choice,Quot.sound,
+            CollatzShadowing.smallOddHasDirectDropWithin100Bool._native.native_decide.ax_1_1,
+            CollatzShadowing.smallOddHasDirectDropWithin100Bool464._native.native_decide.ax_1_1,
+            CollatzShadowing.smallOddHasDirectDropWithin100Bool648._native.native_decide.ax_1_1,
+            CollatzShadowing.Generated.a0SemanticSuffixPairCertificatesT14Prototype_allValid._native.native_decide.ax_1_1,
+            CollatzShadowing.Generated.a0SemanticSuffixPairCertificatesT14_rowCount._native.native_decide.ax_1_1,
+            CollatzShadowing.Generated.a0SemanticSuffixPairCertificatesT14_allValid._native.native_decide.ax_1_1,
+            CollatzShadowing.Generated.a0SemanticSuffixPairCertificatesT14_allValidAtCutoff455._native.native_decide.ax_1_1,
+            CollatzShadowing.Generated.a0SemanticSuffixPairCertificatesT14_matches_summary._native.native_decide.ax_1_1,
+            CollatzShadowing.Generated.a0SemanticSuffixT14PairCoverageV2Lt8Cap100_summary._native.native_decide.ax_1_1
+      - name: Strict November theorem dependency audits
+        run: |
+          lake env lean verification/November13DependencyAudit.lean
+          lake env lean verification/November15DependencyAudit.lean
+          lake env lean verification/FiniteCatalogueDependencyAudit.lean
       - uses: leanprover-community/docgen-action@v1
-        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+        if: github.event_name == 'workflow_dispatch' && inputs.build_docs && github.ref == 'refs/heads/main'

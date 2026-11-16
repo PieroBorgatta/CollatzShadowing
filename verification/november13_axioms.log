@@ -1,0 +1,170 @@
+SPRINT_ROOT_AUDIT: PASS CollatzShadowing.RootPoolBudget.normalizedWeight_nonneg; axioms: [propext,
+ Quot.sound,
+ Classical.choice]
+SPRINT_ROOT_AUDIT: PASS CollatzShadowing.RootPoolBudget.normalizedWeight_eq_loss; axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+SPRINT_ROOT_AUDIT: PASS CollatzShadowing.RootPoolBudget.sum_normalizedWeight_le; axioms: [propext,
+ Quot.sound,
+ Classical.choice]
+SPRINT_ROOT_AUDIT: PASS CollatzShadowing.RootPoolBudget.sum_selected_le; axioms: [propext, Quot.sound, Classical.choice]
+SPRINT_ROOT_AUDIT: PASS CollatzShadowing.RootPoolBudget.sum_labeled_normalizedWeight_le; axioms: [propext,
+ Quot.sound,
+ Classical.choice]
+SPRINT_ROOT_AUDIT: PASS CollatzShadowing.RootPoolBudget.normalized_source_fiber_bound; axioms: [propext,
+ Quot.sound,
+ Classical.choice]
+SPRINT_ROOT_AUDIT: PASS CollatzShadowing.RootPoolBudget.distinct_sources_of_normalized_mass; axioms: [propext,
+ Quot.sound,
+ Classical.choice]
+SPRINT_ROOT_AUDIT: PASS CollatzShadowing.RootPoolBudget.pool_visit_time_unique; axioms: [propext, Quot.sound]
+SPRINT_ROOT_AUDIT: PASS CollatzShadowing.RootPoolBudget.word_eq_of_pool; axioms: [propext, Classical.choice, Quot.sound]
+SPRINT_ROOT_AUDIT: PASS CollatzShadowing.RootPoolBudget.reciprocalWeight_le_initial; axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+SPRINT_ROOT_AUDIT: PASS CollatzShadowing.RootPoolBudget.sum_reciprocalWeight_pool_le; axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+SPRINT_ROOT_AUDIT: PASS CollatzShadowing.RootPoolBudget.sum_labeled_reciprocalWeight_pool_le; axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+SPRINT_ROOT_AUDIT: PASS CollatzShadowing.ReturnBlocks.point_mem_section; axioms: [propext, Quot.sound, Classical.choice]
+SPRINT_ROOT_AUDIT: PASS CollatzShadowing.ReturnBlocks.middle_not_mem_section; axioms: [propext, Quot.sound]
+SPRINT_ROOT_AUDIT: PASS CollatzShadowing.ReturnBlocks.block_steps; axioms: [propext, Classical.choice, Quot.sound]
+SPRINT_ROOT_AUDIT: PASS CollatzShadowing.ReturnBlocks.point_increment; axioms: [propext, Classical.choice, Quot.sound]
+SPRINT_ROOT_AUDIT: PASS CollatzShadowing.ReturnBlocks.point_lt_next; axioms: [propext, Classical.choice, Quot.sound]
+SPRINT_ROOT_AUDIT: PASS CollatzShadowing.ReturnBlocks.first_return; axioms: [propext, Classical.choice, Quot.sound]
+SPRINT_ROOT_AUDIT: PASS CollatzShadowing.ReturnBlocks.iterate_point; axioms: [propext, Classical.choice, Quot.sound]
+SPRINT_ROOT_AUDIT: PASS CollatzShadowing.ReturnBlocks.arbitrarily_many_increasing_first_returns; axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+SPRINT_ROOT_AUDIT: PASS CollatzShadowing.JointAtomDictionary.admissible_iff_residue; axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+SPRINT_ROOT_AUDIT: PASS CollatzShadowing.JointAtomDictionary.inverseSource_affine; axioms: [propext]
+SPRINT_ROOT_AUDIT: PASS CollatzShadowing.JointAtomDictionary.inverseSource_pos; axioms: [propext, Quot.sound]
+SPRINT_ROOT_AUDIT: PASS CollatzShadowing.JointAtomDictionary.source_odd_of_matches; axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+SPRINT_ROOT_AUDIT: PASS CollatzShadowing.JointAtomDictionary.inverseSource_spec; axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+SPRINT_ROOT_AUDIT: PASS CollatzShadowing.JointAtomDictionary.admissible_of_exact; axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+SPRINT_ROOT_AUDIT: PASS CollatzShadowing.JointAtomDictionary.admissible_iff_exact; axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+SPRINT_ROOT_AUDIT: PASS CollatzShadowing.JointAtomDictionary.inverseSource_le_iff; axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+SPRINT_ROOT_AUDIT: PASS CollatzShadowing.JointAtomDictionary.inverseSource_injective_at_length; axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+SPRINT_ROOT_AUDIT: PASS CollatzShadowing.JointAtomDictionary.card_admissible_image; axioms: [propext,
+ Quot.sound,
+ Classical.choice]
+SPRINT_ROOT_AUDIT: PASS CollatzShadowing.AffinePositivity.integer_source_pos; axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+SPRINT_ROOT_AUDIT: PASS CollatzShadowing.AffinePositivity.height_of_ternary_congruence; axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+SPRINT_ROOT_AUDIT: PASS CollatzShadowing.AffinePositivity.admissible_iff_ternary_congruence; axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+SPRINT_ROOT_AUDIT: PASS CollatzShadowing.AffinePositivity.exact_source_iff_ternary_congruence; axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+SPRINT_ROOT_AUDIT: PASS CollatzShadowing.AffinePositivity.card_ternary_atom_image; axioms: [propext,
+ Quot.sound,
+ Classical.choice]
+SPRINT_ROOT_AUDIT: PASS CollatzShadowing.CapacityAllocation.capped_cell_bound; axioms: [propext,
+ Quot.sound,
+ Classical.choice]
+SPRINT_ROOT_AUDIT: PASS CollatzShadowing.CapacityAllocation.mass_le_threshold_cost; axioms: [propext,
+ Quot.sound,
+ Classical.choice]
+SPRINT_ROOT_AUDIT: PASS CollatzShadowing.CapacityAllocation.threshold_lower_bound; axioms: [propext,
+ Quot.sound,
+ Classical.choice]
+SPRINT_ROOT_AUDIT: PASS CollatzShadowing.CapacityAllocation.threshold_cell_identity; axioms: [propext,
+ Quot.sound,
+ Classical.choice]
+SPRINT_ROOT_AUDIT: PASS CollatzShadowing.CapacityAllocation.threshold_allocation_exact; axioms: [propext,
+ Quot.sound,
+ Classical.choice]
+SPRINT_ROOT_AUDIT: PASS CollatzShadowing.CapacityAllocation.threshold_certificate_le_competitor; axioms: [propext,
+ Quot.sound,
+ Classical.choice]
+SPRINT_ROOT_AUDIT: PASS CollatzShadowing.CapacityAllocation.threshold_at_score_upper_bound; axioms: [propext,
+ Quot.sound,
+ Classical.choice]
+SPRINT_ROOT_AUDIT: PASS CollatzShadowing.RelativeMassFlow.total_flow_le_capacity; axioms: [propext,
+ Quot.sound,
+ Classical.choice]
+SPRINT_ROOT_AUDIT: PASS CollatzShadowing.RelativeMassFlow.relative_mass_le_image_capacity; axioms: [propext,
+ Quot.sound,
+ Classical.choice]
+SPRINT_ROOT_AUDIT: PASS CollatzShadowing.RelativeMassFlow.card_images_lower_bound; axioms: [propext,
+ Quot.sound,
+ Classical.choice]
+SPRINT_ROOT_AUDIT: PASS CollatzShadowing.RelativeMassFlow.scaled_card_images_lower_bound; axioms: [propext,
+ Quot.sound,
+ Classical.choice]
+SPRINT_ROOT_AUDIT: PASS CollatzShadowing.RelativeMassFlow.sum_card_disjoint_le; axioms: [propext,
+ Quot.sound,
+ Classical.choice]
+SPRINT_ROOT_AUDIT: PASS CollatzShadowing.RelativeMassFlow.disjoint_block_flow_budget; axioms: [propext,
+ Quot.sound,
+ Classical.choice]
+SPRINT_ROOT_AUDIT: PASS CollatzShadowing.WordSurgery.constant_append; axioms: [propext]
+SPRINT_ROOT_AUDIT: PASS CollatzShadowing.WordSurgery.interior_constant_shift; axioms: [propext]
+SPRINT_ROOT_AUDIT: PASS CollatzShadowing.WordSurgery.balanced_shift_terminal_congruence; axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+SPRINT_ROOT_AUDIT: PASS CollatzShadowing.WordSurgery.terminal_depth_budget; axioms: [propext,
+ Quot.sound,
+ Classical.choice]
+SPRINT_ROOT_AUDIT: PASS CollatzShadowing.SiblingPool.nonrecurrentPool_mono; axioms: []
+SPRINT_ROOT_AUDIT: PASS CollatzShadowing.SiblingPool.sibling_range_nonrecurrent; axioms: [propext, Quot.sound]
+SPRINT_ROOT_AUDIT: PASS CollatzShadowing.SiblingPool.sibling_subpool_nonrecurrent; axioms: [propext, Quot.sound]
+SPRINT_ROOT_AUDIT: PASS CollatzShadowing.SiblingPool.canonical_range_nonrecurrent; axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+SPRINT_ROOT_AUDIT: PASS CollatzShadowing.SiblingPool.canonical_finite_nonrecurrent; axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+SPRINT_ROOT_AUDIT: PASS CollatzShadowing.SiblingPool.canonical_word_charge_le; axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+SPRINT_ROOT_AUDIT: PASS CollatzShadowing.SiblingPool.canonical_finite_word_charge_le; axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+SPRINT_ROOT_AUDIT: PASS CollatzShadowing.SiblingPool.canonical_labeled_word_charge_le; axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+SPRINT_ROOT_AUDIT: PASS CollatzShadowing.CycleRotation.denominator_rotate; axioms: [propext]
+SPRINT_ROOT_AUDIT: PASS CollatzShadowing.CycleRotation.constant_rotate; axioms: [propext, Quot.sound]
+SPRINT_ROOT_AUDIT: PASS CollatzShadowing.CycleRotation.dvd_constant_iff_dvd_rotated; axioms: [propext,
+ Quot.sound,
+ Classical.choice]
+SPRINT_ROOT_AUDIT: PASS CollatzShadowing.CycleRotation.denominator_dvd_constant_iff; axioms: [propext,
+ Quot.sound,
+ Classical.choice]
+SPRINT_ROOT_AUDIT: PASS CollatzShadowing.CycleRotation.denominator_mul_source; axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+SPRINT_ROOT_AUDIT: PASS CollatzShadowing.CycleRotation.cycle_divisor_passes_rotated; axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+SPRINT_ROOT_AUDIT: PASS CollatzShadowing.FiniteOrbitTransfer.iterate_injOn_prefix; axioms: [propext,
+ Quot.sound,
+ Classical.choice]
+SPRINT_ROOT_AUDIT: PASS CollatzShadowing.FiniteOrbitTransfer.window_card_le_prefix_add; axioms: [propext,
+ Quot.sound,
+ Classical.choice]
+SPRINT_ROOT_AUDIT: PASS CollatzShadowing.FiniteOrbitTransfer.window_bound_of_iterate_injective_estimate; axioms: [propext,
+ Quot.sound,
+ Classical.choice]
+SPRINT_DEPENDENCY_AUDIT: PASS; roots: 69

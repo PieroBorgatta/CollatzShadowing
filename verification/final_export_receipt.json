@@ -1,0 +1,12 @@
+{
+  "canonical_release_commit": "3964420b32db9318e7271343f7bed39e26a3a8b8",
+  "canonical_commit_at_build": "fd58ccd52b9fda44197d9c13afd6c1ae8200585e",
+  "source_identity_sha256": "7aeef562183ea57603dfbd11687432ff0fab50538f8ffdb0ac3230f0b4773a3e",
+  "proof_and_config_files": 96,
+  "proof_and_config_bytes_unchanged": true,
+  "exported_files": 101,
+  "final_source_manifest_sha256": "fe12e8cd7adb9cdb0bb8b72e6f4ab89405a3f1a5fe94bc355c461a75ceae734f",
+  "zenodo_v7_doi": "10.5281/zenodo.24284425",
+  "verification_retained": "Fresh standalone build and strict audit results remain applicable because all proof/audit/configuration bytes are unchanged; release documentation was re-exported from the final canonical commit.",
+  "verified_utc": "2026-11-16T15:40:31.306548+00:00"
+}

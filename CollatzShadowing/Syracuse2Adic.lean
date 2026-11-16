@@ -1,9 +1,9 @@
 /-
-2-adic extension of the accelerated Syracuse map (Phase 3 infrastructure).
+2-adic totalization of the accelerated Syracuse map (Phase 3 infrastructure).
 
-This file provides `Syracuse2adic : ℤ_[2] → ℤ_[2]`, the natural
-extension to the 2-adic integers of the accelerated Syracuse map
-defined in `Basic.lean` on `ℕ`. It is the formal counterpart of the
+This file provides `Syracuse2adic : ℤ_[2] → ℤ_[2]`, a total map
+agreeing with the accelerated Syracuse map on positive odd natural
+numbers. It is the formal counterpart of the
 single map `S` written in the paper, which is iterated symmetrically
 on integers `n` and on the rational/2-adic phantom representatives
 `q_w` (cf. paper Section 3, Lemma 3.1 proof).
@@ -25,24 +25,20 @@ of input.
 
 We mirror this exactly with a single `Syracuse2adic : ℤ_[2] → ℤ_[2]`.
 
-### Documented deviation: total extension at the degenerate point
+### Documented deviation: convention at the degenerate point
 
 The element `x = -1/3 ∈ ℤ_[2]` (which exists, since `3` is a unit in
 `ℤ_[2]`) satisfies `3·x + 1 = 0`. The paper does not specify `S` at
 this point, since it is not in any phantom orbit and not a positive
 integer. Our definition extends `S` by the convention `S(-1/3) := 0`.
 
-This extension is **operationally harmless**:
-
-* No expansive phantom has `q_w = -1/3` (its orbit would be the
-  empty cycle, which is not expansive).
-* No positive natural `n` casts to `-1/3` in `ℤ_[2]`.
-* The shadowing congruence in Lemma 3.1 never places `n` in the
-  vicinity of `-1/3` for any input of interest.
-
-The benefit is a single total function with no bookkeeping for
-side hypotheses, giving Lean statements that match the paper's
-notation 1:1.
+The convention makes the Lean function total and does not change its
+values on positive odd natural inputs. It does **not** make the map
+continuous at `-1/3`: positive odd inputs can approach that point to
+arbitrary 2-adic precision while their outputs stay separated, as the
+finite arithmetic theorem in `SyracuseSingularity.lean` records. Thus
+this definition supplies no global continuous conjugacy. The shadowing
+lemmas use it only along their explicitly matched finite itineraries.
 
 Author: AI-assisted (Claude) + Piero Borgatta. Date: 2026-05-04.
 -/
@@ -57,9 +53,9 @@ namespace CollatzShadowing
 -/
 
 /--
-**Paper Section 2/3, accelerated Syracuse map (2-adic extension).**
+**Paper Section 2/3, accelerated Syracuse map (2-adic totalization).**
 
-The accelerated Syracuse map extended to all of `ℤ_[2]`:
+The accelerated Syracuse rule totalized on all of `ℤ_[2]`:
 
 ```text
 Syracuse2adic(x) = (3·x + 1) / 2^{ν₂(3·x + 1)}.
@@ -88,7 +84,7 @@ theorem Syracuse2adic_spec (x : ℤ_[2]) (h : (3 : ℤ_[2]) * x + 1 ≠ 0) :
 
 /-- At the degenerate point `3·x + 1 = 0` (i.e. `x = -1/3` in `ℤ_[2]`),
 the convention is `Syracuse2adic x = 0`. This case is documented in
-the file header and never arises for inputs of interest. -/
+the file header; positive natural inputs cannot equal this point. -/
 @[simp] theorem Syracuse2adic_at_singular (x : ℤ_[2])
     (h : (3 : ℤ_[2]) * x + 1 = 0) : Syracuse2adic x = 0 := by
   unfold Syracuse2adic

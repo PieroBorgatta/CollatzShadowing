@@ -1,0 +1,325 @@
+SPRINT_NOV15_ROOT: PASS CollatzShadowing.CycleMinimumProduct.cycle_log_gap_le; axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+SPRINT_NOV15_ROOT: PASS CollatzShadowing.CycleMinimumProduct.cycle_minimum_product_bound; axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+SPRINT_NOV15_ROOT: PASS CollatzShadowing.CycleMinimumProduct.path_minimum_product_bound; axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+SPRINT_NOV15_ROOT: PASS CollatzShadowing.FirstArrivalBudget.accelerated_first_is_shortcut_first; axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+SPRINT_NOV15_ROOT: PASS CollatzShadowing.FirstArrivalBudget.accelerated_first_is_shortcut_first._proof_1_1; axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+SPRINT_NOV15_ROOT: PASS CollatzShadowing.FirstArrivalBudget.accelerated_first_is_shortcut_first._proof_1_2; axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+SPRINT_NOV15_ROOT: PASS CollatzShadowing.FirstArrivalBudget.accelerated_sum_le_shortcut_sum; axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+SPRINT_NOV15_ROOT: PASS CollatzShadowing.FirstArrivalBudget.accelerated_sum_le_shortcut_sum._proof_1_1; axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+SPRINT_NOV15_ROOT: PASS CollatzShadowing.FirstArrivalBudget.accelerated_sum_le_shortcut_sum._proof_1_2; axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+SPRINT_NOV15_ROOT: PASS CollatzShadowing.FirstArrivalBudget.accelerated_sum_le_shortcut_sum._proof_1_3; axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+SPRINT_NOV15_ROOT: PASS CollatzShadowing.FirstArrivalBudget.canonical_first_arrival_profile_height; axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+SPRINT_NOV15_ROOT: PASS CollatzShadowing.FirstArrivalBudget.canonical_first_arrival_profile_height._proof_1_1; axioms: [propext,
+ Quot.sound]
+SPRINT_NOV15_ROOT: PASS CollatzShadowing.FirstArrivalBudget.clock_strictMono; axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+SPRINT_NOV15_ROOT: PASS CollatzShadowing.FirstArrivalBudget.episode_internal_even; axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+SPRINT_NOV15_ROOT: PASS CollatzShadowing.FirstArrivalBudget.episode_internal_even._proof_1_1; axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+SPRINT_NOV15_ROOT: PASS CollatzShadowing.FirstArrivalBudget.episode_internal_even._proof_1_2; axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+SPRINT_NOV15_ROOT: PASS CollatzShadowing.FirstArrivalBudget.exponent_pos_of_odd; axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+SPRINT_NOV15_ROOT: PASS CollatzShadowing.FirstArrivalBudget.exponent_pos_of_odd._proof_1_1; axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+SPRINT_NOV15_ROOT: PASS CollatzShadowing.FirstArrivalBudget.exponent_pos_of_odd._proof_1_2; axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+SPRINT_NOV15_ROOT: PASS CollatzShadowing.FirstArrivalBudget.first_arrival_comparable_slope_height; axioms: [propext,
+ Quot.sound,
+ Classical.choice]
+SPRINT_NOV15_ROOT: PASS CollatzShadowing.FirstArrivalBudget.first_arrival_injective; axioms: [propext, Quot.sound]
+SPRINT_NOV15_ROOT: PASS CollatzShadowing.FirstArrivalBudget.first_arrival_injective._proof_1_2; axioms: [propext,
+ Quot.sound]
+SPRINT_NOV15_ROOT: PASS CollatzShadowing.FirstArrivalBudget.first_arrival_injective._proof_1_3; axioms: [propext,
+ Quot.sound]
+SPRINT_NOV15_ROOT: PASS CollatzShadowing.FirstArrivalBudget.first_arrival_injective._simp_1_1; axioms: []
+SPRINT_NOV15_ROOT: PASS CollatzShadowing.FirstArrivalBudget.first_arrival_reciprocal_sum_lt_eighty_one; axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+SPRINT_NOV15_ROOT: PASS CollatzShadowing.FirstArrivalBudget.first_arrival_reciprocal_sum_lt_eighty_one._proof_1_1; axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+SPRINT_NOV15_ROOT: PASS CollatzShadowing.FirstArrivalBudget.first_arrival_reciprocal_sum_lt_eighty_one._proof_1_2; axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+SPRINT_NOV15_ROOT: PASS CollatzShadowing.FirstArrivalBudget.first_arrival_same_profile_height; axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+SPRINT_NOV15_ROOT: PASS CollatzShadowing.FirstArrivalBudget.odd_shortcut_hit; axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+SPRINT_NOV15_ROOT: PASS CollatzShadowing.FirstArrivalBudget.odd_shortcut_hit._proof_1_1; axioms: [propext, Quot.sound]
+SPRINT_NOV15_ROOT: PASS CollatzShadowing.FirstArrivalBudget.odd_shortcut_hit._proof_1_2; axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+SPRINT_NOV15_ROOT: PASS CollatzShadowing.FirstArrivalBudget.odd_shortcut_hit._proof_1_3; axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+SPRINT_NOV15_ROOT: PASS CollatzShadowing.FirstArrivalBudget.odd_shortcut_hit._proof_1_4; axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+SPRINT_NOV15_ROOT: PASS CollatzShadowing.FirstArrivalBudget.odd_shortcut_hit._proof_1_5; axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+SPRINT_NOV15_ROOT: PASS CollatzShadowing.FirstArrivalBudget.orbit_odd; axioms: [propext, Classical.choice, Quot.sound]
+SPRINT_NOV15_ROOT: PASS CollatzShadowing.FirstArrivalBudget.shortcut_clock; axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+SPRINT_NOV15_ROOT: PASS CollatzShadowing.IntegerAtomTilt.sum_reciprocal_sq_finset_le_two; axioms: [propext,
+ Quot.sound,
+ Classical.choice]
+SPRINT_NOV15_ROOT: PASS CollatzShadowing.IntegerAtomTilt.tilted_catalogue_le_of_source_injective; axioms: [propext,
+ Quot.sound,
+ Classical.choice]
+SPRINT_NOV15_ROOT: PASS CollatzShadowing.IntegerAtomTilt.tilted_integer_atom_le; axioms: [propext,
+ Quot.sound,
+ Classical.choice]
+SPRINT_NOV15_ROOT: PASS CollatzShadowing.IntegerAtomTilt.tilted_nonreturn_catalogue_le; axioms: [propext,
+ Quot.sound,
+ Classical.choice]
+SPRINT_NOV15_ROOT: PASS CollatzShadowing.IntegerAtomTilt.wordWeight_le_target; axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+SPRINT_NOV15_ROOT: PASS CollatzShadowing.OrbitReciprocal.dyadic_card_bound; axioms: [propext,
+ Quot.sound,
+ Classical.choice]
+SPRINT_NOV15_ROOT: PASS CollatzShadowing.OrbitReciprocal.dyadic_card_bound._simp_1_1; axioms: [propext]
+SPRINT_NOV15_ROOT: PASS CollatzShadowing.OrbitReciprocal.dyadic_fiber_card_le; axioms: [propext,
+ Quot.sound,
+ Classical.choice]
+SPRINT_NOV15_ROOT: PASS CollatzShadowing.OrbitReciprocal.dyadic_fiber_card_le._proof_1_1; axioms: [propext, Quot.sound]
+SPRINT_NOV15_ROOT: PASS CollatzShadowing.OrbitReciprocal.dyadic_fiber_card_le._simp_1_2; axioms: [propext, Quot.sound]
+SPRINT_NOV15_ROOT: PASS CollatzShadowing.OrbitReciprocal.dyadic_fiber_card_le._simp_1_3; axioms: [propext,
+ Quot.sound,
+ Classical.choice]
+SPRINT_NOV15_ROOT: PASS CollatzShadowing.OrbitReciprocal.dyadic_heavy_card_bound; axioms: [propext,
+ Quot.sound,
+ Classical.choice]
+SPRINT_NOV15_ROOT: PASS CollatzShadowing.OrbitReciprocal.dyadic_heavy_card_bound._proof_1_1; axioms: [propext,
+ Quot.sound]
+SPRINT_NOV15_ROOT: PASS CollatzShadowing.OrbitReciprocal.dyadic_heavy_card_bound._proof_1_2; axioms: [propext,
+ Quot.sound]
+SPRINT_NOV15_ROOT: PASS CollatzShadowing.OrbitReciprocal.dyadic_light_card_le; axioms: [propext,
+ Quot.sound,
+ Classical.choice]
+SPRINT_NOV15_ROOT: PASS CollatzShadowing.OrbitReciprocal.dyadic_light_card_le._proof_1_2; axioms: [propext,
+ Quot.sound,
+ Classical.choice]
+SPRINT_NOV15_ROOT: PASS CollatzShadowing.OrbitReciprocal.dyadic_light_card_le._simp_1_1; axioms: [propext,
+ Quot.sound,
+ Classical.choice]
+SPRINT_NOV15_ROOT: PASS CollatzShadowing.OrbitReciprocal.finite_orbit_dyadic_card_bound; axioms: [propext,
+ Quot.sound,
+ Classical.choice]
+SPRINT_NOV15_ROOT: PASS CollatzShadowing.OrbitReciprocal.finite_orbit_reciprocal_sum_le; axioms: [propext,
+ Quot.sound,
+ Classical.choice]
+SPRINT_NOV15_ROOT: PASS CollatzShadowing.OrbitReciprocal.finite_orbit_reciprocal_sum_le._proof_1_1; axioms: [propext,
+ Quot.sound,
+ Classical.choice]
+SPRINT_NOV15_ROOT: PASS CollatzShadowing.OrbitReciprocal.finite_orbit_reciprocal_sum_le._proof_1_2; axioms: [propext,
+ Quot.sound,
+ Classical.choice]
+SPRINT_NOV15_ROOT: PASS CollatzShadowing.OrbitReciprocal.finite_orbit_reciprocal_sum_le._proof_1_3; axioms: [propext,
+ Quot.sound,
+ Classical.choice]
+SPRINT_NOV15_ROOT: PASS CollatzShadowing.OrbitReciprocal.finite_orbit_reciprocal_sum_lt_eighty_one; axioms: [propext,
+ Quot.sound,
+ Classical.choice]
+SPRINT_NOV15_ROOT: PASS CollatzShadowing.OrbitReciprocal.finite_orbit_reciprocal_sum_real_lt_eighty_one; axioms: [propext,
+ Quot.sound,
+ Classical.choice]
+SPRINT_NOV15_ROOT: PASS CollatzShadowing.OrbitReciprocal.heavyEnvelope; axioms: [propext, Quot.sound, Classical.choice]
+SPRINT_NOV15_ROOT: PASS CollatzShadowing.OrbitReciprocal.heavyEnvelope.eq_1; axioms: [propext,
+ Quot.sound,
+ Classical.choice]
+SPRINT_NOV15_ROOT: PASS CollatzShadowing.OrbitReciprocal.heavyEnvelope_sum_le; axioms: [propext,
+ Quot.sound,
+ Classical.choice]
+SPRINT_NOV15_ROOT: PASS CollatzShadowing.OrbitReciprocal.heavy_residue_card_bound; axioms: [propext,
+ Quot.sound,
+ Classical.choice]
+SPRINT_NOV15_ROOT: PASS CollatzShadowing.OrbitReciprocal.iterate_affine_lt; axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+SPRINT_NOV15_ROOT: PASS CollatzShadowing.OrbitReciprocal.iterate_affine_lt._proof_1_1; axioms: [propext, Quot.sound]
+SPRINT_NOV15_ROOT: PASS CollatzShadowing.OrbitReciprocal.iterate_affine_lt._proof_1_2; axioms: [propext, Quot.sound]
+SPRINT_NOV15_ROOT: PASS CollatzShadowing.OrbitReciprocal.iterate_affine_lt._proof_1_3; axioms: [propext, Quot.sound]
+SPRINT_NOV15_ROOT: PASS CollatzShadowing.OrbitReciprocal.iterate_lt_two_mul_three_pow; axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+SPRINT_NOV15_ROOT: PASS CollatzShadowing.OrbitReciprocal.last_bit_complement; axioms: [propext, Quot.sound]
+SPRINT_NOV15_ROOT: PASS CollatzShadowing.OrbitReciprocal.last_bit_complement._proof_1_1; axioms: [propext, Quot.sound]
+SPRINT_NOV15_ROOT: PASS CollatzShadowing.OrbitReciprocal.lightEnvelope; axioms: [propext, Quot.sound, Classical.choice]
+SPRINT_NOV15_ROOT: PASS CollatzShadowing.OrbitReciprocal.lightEnvelope.eq_1; axioms: [propext,
+ Quot.sound,
+ Classical.choice]
+SPRINT_NOV15_ROOT: PASS CollatzShadowing.OrbitReciprocal.lightEnvelope_sum_le; axioms: [propext,
+ Quot.sound,
+ Classical.choice]
+SPRINT_NOV15_ROOT: PASS CollatzShadowing.OrbitReciprocal.parity_moment; axioms: [propext, Quot.sound, Classical.choice]
+SPRINT_NOV15_ROOT: PASS CollatzShadowing.OrbitReciprocal.parity_moment._proof_1_1; axioms: [propext, Quot.sound]
+SPRINT_NOV15_ROOT: PASS CollatzShadowing.OrbitReciprocal.parity_moment_pair; axioms: [propext, Quot.sound]
+SPRINT_NOV15_ROOT: PASS CollatzShadowing.OrbitReciprocal.parity_moment_pair._proof_1_1; axioms: [propext, Quot.sound]
+SPRINT_NOV15_ROOT: PASS CollatzShadowing.OrbitReciprocal.parity_moment_pair._proof_1_2; axioms: [propext, Quot.sound]
+SPRINT_NOV15_ROOT: PASS CollatzShadowing.OrbitReciprocal.parity_moment_pair._proof_1_3; axioms: [propext, Quot.sound]
+SPRINT_NOV15_ROOT: PASS CollatzShadowing.OrbitReciprocal.reciprocal_sum_le_band_sum; axioms: [propext,
+ Quot.sound,
+ Classical.choice]
+SPRINT_NOV15_ROOT: PASS CollatzShadowing.OrbitReciprocal.reciprocal_sum_le_band_sum._simp_1_1; axioms: [propext,
+ Quot.sound]
+SPRINT_NOV15_ROOT: PASS CollatzShadowing.OrbitReciprocal.reciprocal_sum_le_band_sum._simp_1_2; axioms: [propext,
+ Quot.sound]
+SPRINT_NOV15_ROOT: PASS CollatzShadowing.OrbitReciprocal.segment_pos; axioms: [propext, Quot.sound, Classical.choice]
+SPRINT_NOV15_ROOT: PASS CollatzShadowing.OrbitReciprocal.terminal_budget_sum_le; axioms: [propext,
+ Quot.sound,
+ Classical.choice]
+SPRINT_NOV15_ROOT: PASS CollatzShadowing.TraceDensityBridge.density_of_trace_comparison; axioms: [propext,
+ Quot.sound,
+ Classical.choice]
+SPRINT_NOV15_ROOT: PASS CollatzShadowing.TraceDensityBridge.density_of_trace_floor_and_upper; axioms: [propext,
+ Quot.sound,
+ Classical.choice]
+SPRINT_NOV15_ROOT: PASS CollatzShadowing.TraceDensityBridge.density_of_trace_floor_and_upper._simp_1_1; axioms: [propext]
+SPRINT_NOV15_ROOT: PASS CollatzShadowing.TraceDensityBridge.density_of_trace_floor_and_upper._simp_1_2; axioms: [propext]
+SPRINT_NOV15_ROOT: PASS CollatzShadowing.TraceDensityBridge.density_of_trace_floor_and_upper._simp_1_3; axioms: [propext]
+SPRINT_NOV15_ROOT: PASS CollatzShadowing.TraceDensityBridge.density_of_trace_floor_and_upper._simp_1_4; axioms: [propext]
+SPRINT_NOV15_ROOT: PASS CollatzShadowing.TraceDensityBridge.density_of_trace_floor_and_upper._simp_1_5; axioms: [propext]
+SPRINT_NOV15_ROOT: PASS CollatzShadowing.TraceDensityBridge.density_of_trace_floor_and_upper._simp_1_6; axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+SPRINT_NOV15_ROOT: PASS CollatzShadowing.TraceDensityBridge.density_of_trace_floor_and_upper._simp_1_7; axioms: [propext]
+SPRINT_NOV15_ROOT: PASS CollatzShadowing.TraceDensityBridge.summed_density_of_normalized_trace_comparison; axioms: [propext,
+ Quot.sound,
+ Classical.choice]
+SPRINT_NOV15_ROOT: PASS CollatzShadowing.TraceDensityBridge.summed_density_of_normalized_trace_comparison._simp_1_1; axioms: [propext]
+SPRINT_NOV15_ROOT: PASS CollatzShadowing.TraceDensityBridge.summed_density_of_normalized_trace_comparison._simp_1_2; axioms: [propext]
+SPRINT_NOV15_ROOT: PASS CollatzShadowing.TraceDensityBridge.summed_density_of_normalized_trace_comparison._simp_1_3; axioms: [propext]
+SPRINT_NOV15_ROOT: PASS CollatzShadowing.TraceDensityBridge.summed_density_of_normalized_trace_comparison._simp_1_4; axioms: [propext]
+SPRINT_NOV15_ROOT: PASS CollatzShadowing.TraceDensityBridge.summed_density_of_normalized_trace_comparison._simp_1_5; axioms: [propext]
+SPRINT_NOV15_ROOT: PASS CollatzShadowing.TraceDensityBridge.summed_density_of_normalized_trace_comparison._simp_1_6; axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+SPRINT_NOV15_ROOT: PASS CollatzShadowing.TraceDensityBridge.summed_density_of_normalized_trace_comparison._simp_1_7; axioms: [propext]
+SPRINT_NOV15_ROOT: PASS CollatzShadowing.TraceDensityBridge.trace_of_density_comparison; axioms: [propext,
+ Quot.sound,
+ Classical.choice]
+SPRINT_NOV15_ROOT: PASS CollatzShadowing.TwoEditSparsity.exact_word_exponent_budget; axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+SPRINT_NOV15_ROOT: PASS CollatzShadowing.TwoEditSparsity.exact_word_exponent_budget._proof_1_1; axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+SPRINT_NOV15_ROOT: PASS CollatzShadowing.TwoEditSparsity.negative_residual_dvd; axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+SPRINT_NOV15_ROOT: PASS CollatzShadowing.TwoEditSparsity.negative_residual_dvd._simp_1_1; axioms: [propext,
+ Quot.sound,
+ Classical.choice]
+SPRINT_NOV15_ROOT: PASS CollatzShadowing.TwoEditSparsity.negative_residual_identity; axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+SPRINT_NOV15_ROOT: PASS CollatzShadowing.TwoEditSparsity.positive_residual_dvd; axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+SPRINT_NOV15_ROOT: PASS CollatzShadowing.TwoEditSparsity.positive_residual_dvd._simp_1_1; axioms: [propext,
+ Quot.sound,
+ Classical.choice]
+SPRINT_NOV15_ROOT: PASS CollatzShadowing.TwoEditSparsity.positive_residual_identity; axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+SPRINT_NOV15_ROOT: PASS CollatzShadowing.WordProductEnvelope.comparable_slope_height; axioms: [propext,
+ Quot.sound,
+ Classical.choice]
+SPRINT_NOV15_ROOT: PASS CollatzShadowing.WordProductEnvelope.exact_word_inflation; axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+SPRINT_NOV15_ROOT: PASS CollatzShadowing.WordProductEnvelope.inflation; axioms: [propext, Quot.sound, Classical.choice]
+SPRINT_NOV15_ROOT: PASS CollatzShadowing.WordProductEnvelope.inflation._proof_1; axioms: [propext]
+SPRINT_NOV15_ROOT: PASS CollatzShadowing.WordProductEnvelope.inflation._proof_2; axioms: [propext]
+SPRINT_NOV15_ROOT: PASS CollatzShadowing.WordProductEnvelope.inflation.eq_1; axioms: [propext,
+ Quot.sound,
+ Classical.choice]
+SPRINT_NOV15_ROOT: PASS CollatzShadowing.WordProductEnvelope.inflation_eq_product; axioms: [propext,
+ Quot.sound,
+ Classical.choice]
+SPRINT_NOV15_ROOT: PASS CollatzShadowing.WordProductEnvelope.inflation_le_exp_of_reciprocal_budget; axioms: [propext,
+ Quot.sound,
+ Classical.choice]
+SPRINT_NOV15_ROOT: PASS CollatzShadowing.WordProductEnvelope.inflation_succ; axioms: [propext,
+ Quot.sound,
+ Classical.choice]
+SPRINT_NOV15_ROOT: PASS CollatzShadowing.WordProductEnvelope.same_profile_height; axioms: [propext,
+ Quot.sound,
+ Classical.choice]
+SPRINT_NOV15_ROOT: PASS CollatzShadowing.WordProductEnvelope.same_profile_height_81; axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+SPRINT_NOV15_ROOT: PASS _private.CollatzShadowing.IntegerAtomTilt.0.CollatzShadowing.IntegerAtomTilt.reciprocal_square_range_budget; axioms: [propext,
+ Quot.sound,
+ Classical.choice]
+SPRINT_NOV15_ROOT: PASS _private.CollatzShadowing.OrbitReciprocal.0.CollatzShadowing.OrbitReciprocal.band_zero_card_le; axioms: [propext,
+ Quot.sound,
+ Classical.choice]
+SPRINT_NOV15_ROOT: PASS _private.CollatzShadowing.OrbitReciprocal.0.CollatzShadowing.OrbitReciprocal.band_zero_card_le._proof_1_2; axioms: [propext,
+ Quot.sound]
+SPRINT_NOV15_ROOT: PASS _private.CollatzShadowing.OrbitReciprocal.0.CollatzShadowing.OrbitReciprocal.band_zero_card_le._simp_1_1; axioms: [propext,
+ Quot.sound]
+SPRINT_NOV15_ROOT: PASS _private.CollatzShadowing.OrbitReciprocal.0.CollatzShadowing.OrbitReciprocal.geom_sum_rat_le; axioms: [propext,
+ Quot.sound,
+ Classical.choice]
+SPRINT_NOV15_ROOT: PASS _private.CollatzShadowing.OrbitReciprocal.0.CollatzShadowing.OrbitReciprocal.heavyEnvelope_block; axioms: [propext,
+ Quot.sound,
+ Classical.choice]
+SPRINT_NOV15_ROOT: PASS _private.CollatzShadowing.OrbitReciprocal.0.CollatzShadowing.OrbitReciprocal.heavyEnvelope_block._proof_1_1; axioms: [propext,
+ Quot.sound]
+SPRINT_NOV15_ROOT: PASS _private.CollatzShadowing.OrbitReciprocal.0.CollatzShadowing.OrbitReciprocal.lightEnvelope_block; axioms: [propext,
+ Quot.sound,
+ Classical.choice]
+SPRINT_NOV15_ROOT: PASS _private.CollatzShadowing.OrbitReciprocal.0.CollatzShadowing.OrbitReciprocal.lightEnvelope_block._proof_1_1; axioms: [propext,
+ Quot.sound]
+SPRINT_NOV15_ROOT: PASS _private.CollatzShadowing.OrbitReciprocal.0.CollatzShadowing.OrbitReciprocal.sum_blocks; axioms: [propext,
+ Quot.sound,
+ Classical.choice]
+SPRINT_NOV15_ROOT: PASS _private.CollatzShadowing.OrbitReciprocal.0.CollatzShadowing.OrbitReciprocal.sum_blocks._proof_1_1; axioms: [propext,
+ Quot.sound]
+SPRINT_NOV15_ROOT: PASS _private.CollatzShadowing.OrbitReciprocal.0.CollatzShadowing.OrbitReciprocal.sum_two_mul_three_pow; axioms: [propext,
+ Quot.sound,
+ Classical.choice]
+SPRINT_NOV15_ROOT: PASS _private.CollatzShadowing.OrbitReciprocal.0.CollatzShadowing.OrbitReciprocal.sum_two_mul_three_pow._proof_1_1; axioms: [propext,
+ Quot.sound,
+ Classical.choice]
+SPRINT_NOV15_ROOT: PASS _private.CollatzShadowing.OrbitReciprocal.0.CollatzShadowing.OrbitReciprocal.terminal_budget_identity; axioms: [propext,
+ Quot.sound,
+ Classical.choice]
+SPRINT_NOV15_AUDIT: PASS; declarations: 136; encoded-private: 14; modules: 7

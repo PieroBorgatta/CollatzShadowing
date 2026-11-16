@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "canonical_commit_at_build": "fd58ccd52b9fda44197d9c13afd6c1ae8200585e",
+  "source_identity_sha256": "7aeef562183ea57603dfbd11687432ff0fab50538f8ffdb0ac3230f0b4773a3e",
+  "proof_and_config_files": 96,
+  "source_manifest_sha256_at_build": "5a92cf99f3200fc949838e6f782d1e182ec806db2275373850fe82dfe50ed3e6",
+  "lean_toolchain": "leanprover/lean4:v4.29.1",
+  "lean_version": "Lean (version 4.29.1, arm64-apple-darwin24.6.0, commit f72c35b3f637c8c6571d353742168ab66cc22c00, Release)",
+  "mathlib_input_rev": "v4.29.1",
+  "mathlib_commit": "5e932f97dd25535344f80f9dd8da3aab83df0fe6",
+  "strict_allowed_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "audits_run_concurrently": true,
+  "audits": [
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "verification/November13DependencyAudit.lean"
+      ],
+      "log": "verification/november13_axioms.log",
+      "exit_code": 0,
+      "elapsed_seconds": 142.763,
+      "expected_summary": "SPRINT_DEPENDENCY_AUDIT: PASS; roots: 69",
+      "actual_summary": "SPRINT_DEPENDENCY_AUDIT: PASS; roots: 69",
+      "passed": true
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "verification/November15DependencyAudit.lean"
+      ],
+      "log": "verification/november15_axioms.log",
+      "exit_code": 0,
+      "elapsed_seconds": 179.958,
+      "expected_summary": "SPRINT_NOV15_AUDIT: PASS; declarations: 136; encoded-private: 14; modules: 7",
+      "actual_summary": "SPRINT_NOV15_AUDIT: PASS; declarations: 136; encoded-private: 14; modules: 7",
+      "passed": true
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "verification/FiniteCatalogueDependencyAudit.lean"
+      ],
+      "log": "verification/finite_catalogue_axioms.log",
+      "exit_code": 0,
+      "elapsed_seconds": 174.019,
+      "expected_summary": "SPRINT_EXTRA3H_AUDIT: PASS; declarations: 68; encoded-private: 5; modules: 4",
+      "actual_summary": "SPRINT_EXTRA3H_AUDIT: PASS; declarations: 68; encoded-private: 5; modules: 4",
+      "passed": true
+    }
+  ],
+  "elapsed_seconds": 180.34,
+  "finished_utc": "2026-11-16T15:14:39.350967+00:00",
+  "all_passed": true,
+  "limitations": "Scoped audits with pinned Lean 4.29.1; not a cold dependency rebuild or an independently implemented kernel replay. The whole library retains nine explicitly allowed legacy native certificates."
+}

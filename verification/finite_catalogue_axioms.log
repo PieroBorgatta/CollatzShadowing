@@ -1,0 +1,160 @@
+SPRINT_EXTRA3H_ROOT: PASS CollatzShadowing.BoundedSlopeCatalogue.catalogue; axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+SPRINT_EXTRA3H_ROOT: PASS CollatzShadowing.BoundedSlopeCatalogue.catalogue_finite; axioms: [propext,
+ Quot.sound,
+ Classical.choice]
+SPRINT_EXTRA3H_ROOT: PASS CollatzShadowing.BoundedSlopeCatalogue.catalogue_ncard_le; axioms: [propext,
+ Quot.sound,
+ Classical.choice]
+SPRINT_EXTRA3H_ROOT: PASS CollatzShadowing.BoundedSlopeCatalogue.catalogue_parameter_bounds; axioms: [propext,
+ Quot.sound,
+ Classical.choice]
+SPRINT_EXTRA3H_ROOT: PASS CollatzShadowing.BoundedSlopeCatalogue.catalogue_source_bound; axioms: [propext,
+ Quot.sound,
+ Classical.choice]
+SPRINT_EXTRA3H_ROOT: PASS CollatzShadowing.BoundedSlopeCatalogue.subcatalogue_card_le; axioms: [propext,
+ Quot.sound,
+ Classical.choice]
+SPRINT_EXTRA3H_ROOT: PASS CollatzShadowing.FiniteHorizonBudget.iterate_shifted_growth; axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+SPRINT_EXTRA3H_ROOT: PASS CollatzShadowing.FiniteHorizonBudget.reciprocal_square_tail; axioms: [propext,
+ Quot.sound,
+ Classical.choice]
+SPRINT_EXTRA3H_ROOT: PASS CollatzShadowing.FiniteHorizonBudget.reciprocal_square_tail._proof_1_1; axioms: [propext,
+ Quot.sound]
+SPRINT_EXTRA3H_ROOT: PASS CollatzShadowing.FiniteHorizonBudget.reciprocal_square_tail._proof_1_2; axioms: [propext,
+ Quot.sound]
+SPRINT_EXTRA3H_ROOT: PASS CollatzShadowing.FiniteHorizonBudget.reciprocal_square_tail._proof_1_3; axioms: [propext,
+ Quot.sound]
+SPRINT_EXTRA3H_ROOT: PASS CollatzShadowing.FiniteHorizonBudget.reciprocal_square_tail._proof_1_4; axioms: [propext,
+ Quot.sound]
+SPRINT_EXTRA3H_ROOT: PASS CollatzShadowing.FiniteHorizonBudget.source_lower_of_horizon; axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+SPRINT_EXTRA3H_ROOT: PASS CollatzShadowing.FiniteHorizonBudget.source_lower_of_horizon._proof_1_1; axioms: [propext,
+ Quot.sound]
+SPRINT_EXTRA3H_ROOT: PASS CollatzShadowing.FiniteHorizonBudget.source_lower_of_horizon._proof_1_2; axioms: [propext,
+ Quot.sound]
+SPRINT_EXTRA3H_ROOT: PASS CollatzShadowing.FiniteHorizonBudget.step_shifted_growth; axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+SPRINT_EXTRA3H_ROOT: PASS CollatzShadowing.FiniteHorizonBudget.step_shifted_growth._proof_1_1; axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+SPRINT_EXTRA3H_ROOT: PASS CollatzShadowing.FiniteHorizonBudget.step_shifted_growth._proof_1_2; axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+SPRINT_EXTRA3H_ROOT: PASS CollatzShadowing.FiniteHorizonBudget.tilted_fixed_depth_tail; axioms: [propext,
+ Quot.sound,
+ Classical.choice]
+SPRINT_EXTRA3H_ROOT: PASS CollatzShadowing.FiniteHorizonBudget.tilted_horizon_catalogue; axioms: [propext,
+ Quot.sound,
+ Classical.choice]
+SPRINT_EXTRA3H_ROOT: PASS CollatzShadowing.FiniteHorizonBudget.tilted_nonreturn_horizon; axioms: [propext,
+ Quot.sound,
+ Classical.choice]
+SPRINT_EXTRA3H_ROOT: PASS CollatzShadowing.FiniteHorizonBudget.tilted_tail_catalogue; axioms: [propext,
+ Quot.sound,
+ Classical.choice]
+SPRINT_EXTRA3H_ROOT: PASS CollatzShadowing.QuadraticOccupation.potential_sq_sub_succ; axioms: [propext,
+ Quot.sound,
+ Classical.choice]
+SPRINT_EXTRA3H_ROOT: PASS CollatzShadowing.QuadraticOccupation.potential_sq_sub_succ._simp_1_1; axioms: [propext]
+SPRINT_EXTRA3H_ROOT: PASS CollatzShadowing.QuadraticOccupation.potential_sq_sub_succ._simp_1_2; axioms: [propext]
+SPRINT_EXTRA3H_ROOT: PASS CollatzShadowing.QuadraticOccupation.potential_sq_sub_succ._simp_1_3; axioms: [propext]
+SPRINT_EXTRA3H_ROOT: PASS CollatzShadowing.QuadraticOccupation.potential_sq_sub_succ._simp_1_4; axioms: [propext]
+SPRINT_EXTRA3H_ROOT: PASS CollatzShadowing.QuadraticOccupation.potential_sq_sub_succ._simp_1_5; axioms: [propext]
+SPRINT_EXTRA3H_ROOT: PASS CollatzShadowing.QuadraticOccupation.potential_sq_sub_succ._simp_1_6; axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+SPRINT_EXTRA3H_ROOT: PASS CollatzShadowing.QuadraticOccupation.potential_sq_sub_succ._simp_1_7; axioms: [propext]
+SPRINT_EXTRA3H_ROOT: PASS CollatzShadowing.QuadraticOccupation.squareLoss; axioms: [propext,
+ Quot.sound,
+ Classical.choice]
+SPRINT_EXTRA3H_ROOT: PASS CollatzShadowing.QuadraticOccupation.squareLoss_pos; axioms: [propext,
+ Quot.sound,
+ Classical.choice]
+SPRINT_EXTRA3H_ROOT: PASS CollatzShadowing.QuadraticOccupation.sum_squareLoss_finset_le; axioms: [propext,
+ Quot.sound,
+ Classical.choice]
+SPRINT_EXTRA3H_ROOT: PASS CollatzShadowing.QuadraticOccupation.sum_squareLoss_range; axioms: [propext,
+ Quot.sound,
+ Classical.choice]
+SPRINT_EXTRA3H_ROOT: PASS CollatzShadowing.QuadraticOccupation.sum_weight_sq_visits_le; axioms: [propext,
+ Quot.sound,
+ Classical.choice]
+SPRINT_EXTRA3H_ROOT: PASS CollatzShadowing.QuadraticOccupation.sum_weight_sq_visits_le._simp_1_1; axioms: [propext]
+SPRINT_EXTRA3H_ROOT: PASS CollatzShadowing.QuadraticOccupation.sum_weight_sq_visits_le._simp_1_2; axioms: [propext]
+SPRINT_EXTRA3H_ROOT: PASS CollatzShadowing.QuadraticOccupation.sum_weight_sq_visits_le._simp_1_3; axioms: [propext]
+SPRINT_EXTRA3H_ROOT: PASS CollatzShadowing.QuadraticOccupation.sum_weight_sq_visits_le._simp_1_4; axioms: [propext]
+SPRINT_EXTRA3H_ROOT: PASS CollatzShadowing.QuadraticOccupation.sum_weight_sq_visits_le._simp_1_5; axioms: [propext]
+SPRINT_EXTRA3H_ROOT: PASS CollatzShadowing.QuadraticOccupation.sum_weight_sq_visits_le._simp_1_6; axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+SPRINT_EXTRA3H_ROOT: PASS CollatzShadowing.QuadraticOccupation.sum_weight_sq_visits_le._simp_1_7; axioms: [propext]
+SPRINT_EXTRA3H_ROOT: PASS CollatzShadowing.QuadraticOccupation.sum_wordWeight_sq_fiber_le; axioms: [propext,
+ Quot.sound,
+ Classical.choice]
+SPRINT_EXTRA3H_ROOT: PASS CollatzShadowing.QuadraticOccupation.tilted_catalogue_le; axioms: [propext,
+ Quot.sound,
+ Classical.choice]
+SPRINT_EXTRA3H_ROOT: PASS CollatzShadowing.QuadraticOccupation.visitConstant; axioms: [propext,
+ Quot.sound,
+ Classical.choice]
+SPRINT_EXTRA3H_ROOT: PASS CollatzShadowing.QuadraticOccupation.visitConstant_nonneg; axioms: [propext,
+ Quot.sound,
+ Classical.choice]
+SPRINT_EXTRA3H_ROOT: PASS CollatzShadowing.SpineDispersion.collision_defect_ge_lower_allocations; axioms: [propext,
+ Quot.sound,
+ Classical.choice]
+SPRINT_EXTRA3H_ROOT: PASS CollatzShadowing.SpineDispersion.collision_defect_ge_of_two_branches; axioms: [propext,
+ Quot.sound,
+ Classical.choice]
+SPRINT_EXTRA3H_ROOT: PASS CollatzShadowing.SpineDispersion.collision_defect_ge_of_two_branches._simp_1_1; axioms: [propext,
+ Quot.sound]
+SPRINT_EXTRA3H_ROOT: PASS CollatzShadowing.SpineDispersion.collision_defect_ge_of_two_branches._simp_1_2; axioms: [propext,
+ Quot.sound]
+SPRINT_EXTRA3H_ROOT: PASS CollatzShadowing.SpineDispersion.collision_defect_le_selected; axioms: [propext,
+ Quot.sound,
+ Classical.choice]
+SPRINT_EXTRA3H_ROOT: PASS CollatzShadowing.SpineDispersion.collision_defect_nonneg; axioms: [propext,
+ Quot.sound,
+ Classical.choice]
+SPRINT_EXTRA3H_ROOT: PASS CollatzShadowing.SpineDispersion.collision_spine_budget; axioms: [propext,
+ Quot.sound,
+ Classical.choice]
+SPRINT_EXTRA3H_ROOT: PASS CollatzShadowing.SpineDispersion.ratio_square_defect_le; axioms: [propext,
+ Quot.sound,
+ Classical.choice]
+SPRINT_EXTRA3H_ROOT: PASS CollatzShadowing.SpineDispersion.ratio_square_defect_le._simp_1_1; axioms: [propext]
+SPRINT_EXTRA3H_ROOT: PASS CollatzShadowing.SpineDispersion.ratio_square_defect_le._simp_1_2; axioms: [propext]
+SPRINT_EXTRA3H_ROOT: PASS CollatzShadowing.SpineDispersion.ratio_square_defect_le._simp_1_3; axioms: [propext]
+SPRINT_EXTRA3H_ROOT: PASS CollatzShadowing.SpineDispersion.ratio_square_defect_le._simp_1_4; axioms: [propext]
+SPRINT_EXTRA3H_ROOT: PASS CollatzShadowing.SpineDispersion.ratio_square_defect_le._simp_1_5; axioms: [propext]
+SPRINT_EXTRA3H_ROOT: PASS CollatzShadowing.SpineDispersion.ratio_square_defect_le._simp_1_6; axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+SPRINT_EXTRA3H_ROOT: PASS CollatzShadowing.SpineDispersion.ratio_square_defect_le._simp_1_7; axioms: [propext]
+SPRINT_EXTRA3H_ROOT: PASS CollatzShadowing.SpineDispersion.ratio_square_prefix_budget; axioms: [propext,
+ Quot.sound,
+ Classical.choice]
+SPRINT_EXTRA3H_ROOT: PASS CollatzShadowing.SpineDispersion.ratio_square_prefix_budget._proof_1_1; axioms: [propext,
+ Quot.sound]
+SPRINT_EXTRA3H_ROOT: PASS _private.CollatzShadowing.BoundedSlopeCatalogue.0.CollatzShadowing.BoundedSlopeCatalogue.source; axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+SPRINT_EXTRA3H_ROOT: PASS _private.CollatzShadowing.BoundedSlopeCatalogue.0.CollatzShadowing.BoundedSlopeCatalogue.source.eq_1; axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+SPRINT_EXTRA3H_ROOT: PASS _private.CollatzShadowing.BoundedSlopeCatalogue.0.CollatzShadowing.BoundedSlopeCatalogue.source_spec; axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+SPRINT_EXTRA3H_ROOT: PASS _private.CollatzShadowing.FiniteHorizonBudget.0.CollatzShadowing.FiniteHorizonBudget.reciprocal_square_shifted_range; axioms: [propext,
+ Quot.sound,
+ Classical.choice]
+SPRINT_EXTRA3H_ROOT: PASS _private.CollatzShadowing.SpineDispersion.0.CollatzShadowing.SpineDispersion.sum_increment; axioms: [propext,
+ Quot.sound,
+ Classical.choice]
+SPRINT_EXTRA3H_AUDIT: PASS; declarations: 68; encoded-private: 5; modules: 4

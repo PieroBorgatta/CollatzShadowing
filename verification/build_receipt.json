@@ -1,0 +1,7 @@
+{
+  "command": "lake build",
+  "started_from": "empty standalone .lake/build; precompiled canonical dependency packages reused",
+  "exit_code": 0,
+  "elapsed_seconds": 2052.495,
+  "finished_utc": "2026-11-16T15:11:03.973386+00:00"
+}

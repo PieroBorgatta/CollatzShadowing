@@ -1,86 +1,107 @@
-# CollatzShadowing — a Lean 4 + Mathlib formalization
+# CollatzShadowing
 
-A self-contained Lean 4 (Lake) library formalizing the verified core of the
-*Phantom Orbit Shadowing* program on the Collatz conjecture. The sources are
-**`sorry`-, `admit`- and `axiom`-free**.
+A standalone Lean 4 + Mathlib library for finite arithmetic in the
+*Phantom Orbit Shadowing* research program. This v7 standalone snapshot
+synchronizes the verified library from the canonical
+[Collatz repository](https://github.com/PieroBorgatta/Collatz).
 
-> This library does **not** prove the Collatz conjecture. It formalizes a
-> shadowing lemma, a no-infinite-shadowing corollary, an expanding-cycle
-> exclusion, finite Collatz–Wielandt spectral-radius certificates, and an
-> elementary descent bridge — the rigorously verified part of the program.
-> Full project, papers and methodology:
-> [github.com/PieroBorgatta/Collatz](https://github.com/PieroBorgatta/Collatz).
+**This library does not prove the Collatz conjecture.** Pointwise descent,
+the required relative branching lower bound, and general nontrivial-cycle
+exclusion remain open. Conditional theorems retain their hypotheses.
 
-## At a glance
+## Snapshot and scope
 
-- **14 AI-authored modules** (~7,800 lines, ~300 theorems/lemmas), written by
-  AI assistants under the author's direction and machine-verified.
-- **26 generator-emitted certificate modules** (~43,500 lines) under
-  `CollatzShadowing/Generated/`.
-- Toolchain: **Lean v4.29.1 + Mathlib v4.29.1** (pinned in `lean-toolchain`
-  and `lakefile.toml`).
-- Declaration → file map: [`CollatzShadowing/THEOREM_INDEX.md`](CollatzShadowing/THEOREM_INDEX.md).
+- Lean **4.29.1** and Mathlib **4.29.1**, pinned without a toolchain change.
+- **90 library Lean files**, including the entrypoint and 26 generated
+  finite-certificate modules. The exact exported files and SHA-256 hashes
+  are in [SOURCE_MANIFEST.json](SOURCE_MANIFEST.json).
+- Exact shadowing, cylinder and precision results; finite operator
+  certificates; first-arrival, reciprocal and occupation budgets; finite
+  bounded-slope catalogues and conditional transport interfaces.
+- The accelerated 2-adic map's singularity at `-1/3` is treated explicitly.
+  No global continuity claim from the historical v4 paper is retained.
+- Paper-only paired-path constructions, external analytic projects and
+  standalone maximal-gain prototypes are **not** part of this library's
+  formally checked declaration count.
 
-## Build
+See [PROVENANCE.md](PROVENANCE.md) for synchronization, licensing and
+verification scope, [STATUS.md](STATUS.md) for the full mathematical status,
+and the [declaration index](CollatzShadowing/THEOREM_INDEX.md) for exact
+theorem names. External links in the exported status document are pinned
+to the canonical source commit.
 
-```bash
-lake exe cache get   # download the Mathlib precompiled cache (several GB)
-lake build           # build the whole project
+## Build and audit
+
+```sh
+lake exe cache get
+lake build
+python3 tools/export_from_collatz.py --check
+lake env lean verification/November13DependencyAudit.lean
+lake env lean verification/November15DependencyAudit.lean
+lake env lean verification/FiniteCatalogueDependencyAudit.lean
 ```
 
-Check there are no proof placeholders (no output = clean):
+The source files contain no proof placeholders or project-declared
+`axiom` commands. Some legacy finite certificates use `native_decide`;
+those proofs include the native backend in their trusted base. The CI
+allowlist names exactly the nine existing native axioms. The three
+separate November audits require only `propext`, `Classical.choice` and
+`Quot.sound` for their specified roots and transitive dependencies,
+including encoded-private declarations in the two later audits.
 
-```bash
-grep -rnE 'sorry|admit|^[[:space:]]*axiom' CollatzShadowing --include='*.lean'
-```
+API documentation generation and deployment are an optional manual CI
+action (`build_docs: true` on `main`). Ordinary release pushes run the
+formal checks without waiting for the separate, potentially lengthy
+documentation build.
 
-## Headline results
+These checks do not verify the external atom-floor or density papers, nor
+turn the source scan into an independent-kernel proof audit. The pinned
+Lean version has not been migrated to a later toolchain. A publication
+must retain that verification limitation.
 
-| Result | Declaration | Module |
-|---|---|---|
-| Exact congruential shadowing | `exact_shadowing`, `exact_shadowing_periods` | `Shadowing` |
-| No infinite (periodic) shadowing | `no_infinite_period_congruence_expansive` | `NoInfinite` |
-| No positive integer on an expanding cycle | `no_positive_endpoint_eventually_periodic_expansive_congruence` | `NoInfinite` |
-| Generic weighted Collatz–Wielandt bound | `spectralRadius_le_of_finiteCWCertificate` | `Bound` |
-| Single-node spectral bound `ρ ≤ 97/2000` | `t10j32HighBitTailSpectralRadiusBound_97_2000` | `Generated/T10J32HighBitTailCW` |
-| Deterministic `(K,b)` bound `< 3/4` (`K₀=16`) | `k16s16KDeterministicGeneratedSpectralRadiusBound` | `Generated/K16S16KDeterministicCW` |
-| Finite weak row-`L¹` bridge | `WeakBridge.weighted_action_diff_le` | `WeakBridge` |
-| High-`ν₂` source-tail mass `≤ 2⁻ᴿ` | `WeakBridge.TailCount.dyadic_tail_count_mul_le` | `WeakBridge` |
-| Descent ⇒ Collatz (elementary) | `classicalCollatz_of_uniformStrictDescent_provedBridge` | `CollatzBridge` |
+## Representative results
 
-## Modules
+| Result | Module |
+|---|---|
+| Exact congruential shadowing and expansive-cycle exclusion | `Shadowing`, `NoInfinite` |
+| Exact finite valuation cylinders and singular outputs | `ExactCylinders`, `SyracuseSingularity` |
+| Finite-injective shortcut reciprocal budget below 81 | `OrbitReciprocal` |
+| First-arrival product and exact-word height control | `FirstArrivalBudget`, `WordProductEnvelope` |
+| Integer-atom and reciprocal-square tail bounds | `IntegerAtomTilt`, `FiniteHorizonBudget` |
+| Squared occupation with repeated sources and returns | `QuadraticOccupation` |
+| Finite complete bounded-slope catalogues | `BoundedSlopeCatalogue` |
+| Finite collision bounds and explicit lower-allocation interfaces | `SpineDispersion` |
 
-**Shadowing core** — `Basic` (`S`, `ν₂`), `Phantom` (`C_w`, `A_w`, `q_w`),
-`Syracuse2Adic` (`S̃ : ℤ₂ → ℤ₂`), `Auxiliary`, `Shadowing`, `NoInfinite`.
+Catalogue cardinality and source bounds do not give a computable bound on
+every hitting time. Finite collision upper bounds do not supply the
+branching lower bound required to exclude divergence.
 
-**Finite operator / certificate layer** — `EpisodeGraph`, `Operator`
-(`full = core + tail`), `Bound` (Collatz–Wielandt bound bridged to Mathlib's
-`spectralRadius`).
+## Citation and release policy
 
-**Phase-10 finite bridges** — `WeakBridge` (weighted row-`L¹` bound, exact
-high-`ν₂` tail, `BitLength`/dyadic-boundary development, `LabelSplit` schema),
-`CollatzBridge` (descent bridge; open hypotheses isolated as named `Prop`s).
+The paper and its supplementary release are maintained in the canonical
+research repository. Zenodo concept DOI, covering all published versions:
+[10.5281/zenodo.20021537](https://doi.org/10.5281/zenodo.20021537).
+The previously published v6 is
+[10.5281/zenodo.22936057](https://doi.org/10.5281/zenodo.22936057).
 
-**`Generated/`** — finite certificates emitted by AI-written Python generators
-(in the [main repo](https://github.com/PieroBorgatta/Collatz)); verified by
-Lean.
+The v7 manuscript and supplementary source archive are published at
+[10.5281/zenodo.24284425](https://doi.org/10.5281/zenodo.24284425),
+version **7.0.0**.
 
-`Inventory` / `EpisodeInventory` are Mathlib-API scratch buffers.
+The repository remains public. Development may be committed locally, but
+public pushes are reserved for completed, reviewed research or release
+milestones, or an explicit user instruction. Experimental work is not
+pushed automatically after every session.
 
-## Citation
+## Attribution and licensing
 
-Frozen, citable snapshots are on Zenodo. The program's methodology
-retrospective is version 5:
-[10.5281/zenodo.20554750](https://doi.org/10.5281/zenodo.20554750); concept
-DOI (always latest): [10.5281/zenodo.20021537](https://doi.org/10.5281/zenodo.20021537).
+Piero Borgatta directs the AI-assisted research and formalization. The
+[methodology disclosure](https://github.com/PieroBorgatta/Collatz/blob/main/METHODOLOGY.md)
+describes the collaboration. Classical results, adapted constructions and
+external inputs must not be presented as new theorems of this project.
 
-## Methodology
-
-Built by the author in cross-AI collaboration (Claude, Codex, Gemini), with
-every formal claim funnelled through Lean: a proof counts only if `lake build`
-succeeds with no `sorry`. See the
-[methodology disclosure](https://github.com/PieroBorgatta/Collatz/blob/main/METHODOLOGY.md).
-
-## License
-
-[MIT](LICENSE).
+The **current synchronized source snapshot is CC BY 4.0**, matching the
+canonical repository; see [LICENSE](LICENSE). The original standalone MIT
+notice is preserved as [LICENSE-MIT](LICENSE-MIT). Earlier MIT grants are
+not revoked; historical versions remain available in Git history. The
+scope of this update is explained in [PROVENANCE.md](PROVENANCE.md).
